@@ -64,7 +64,7 @@ h1 {
 .header-container {
     position: relative;
     height: 500px;
-    background-image: url("init.jpg");
+    background-image: url("./init.jpg");
     background-size: cover;
     background-position: center;
   }
