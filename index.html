@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>Inicio | Dry Clean Fresh</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Tu archivo CSS personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css" />
+    <script src="https://js.arcgis.com/4.26/"></script>
+    
+</head>
+
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Dry Clean Fresh</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Servicios</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado -->
+    <header class="header-container">
+        <div class="header-content">
+            <div class="container">
+                <!-- Contenedor del texto -->
+                <div class="fade-in">
+                    <h1>Bienvenido a Dry Clean Fresh</h1>
+                </div>
+                <p>Explora nuestras increíbles características y servicios.</p>
+                <a href="#serv" class="btn btn-light" id="btn">Leer más</a>
+            </div>
+        </div>
+    </header>
+    <!-- Sección de características -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" id="serv">Servicios</h2>
+            <div class="row align-items-stretch">
+                <!-- Agrega la clase "align-items-stretch" al contenedor de las columnas -->
+                <div class="col-lg-4">
+                    <div class="card mb-4 feature-card h-100 d-flex">
+                        <!-- Agrega las clases "h-100" y "d-flex" a la tarjeta -->
+                        <div class="card-body">
+                            <h2 class="card-title">Lavanderia</h2>
+                            <p class="card-text">Utilizamos equipos modernos y detergentes de alta calidad para lavar y
+                                secar tu ropa de manera efectiva. Nos aseguramos de que tus prendas se limpien
+                                adecuadamente y se sequen de manera óptima.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-4 feature-card h-100 d-flex">
+                        <!-- Agrega las clases "h-100" y "d-flex" a la tarjeta -->
+                        <div class="card-body">
+                            <h2 class="card-title">Planchado</h2>
+                            <p class="card-text">Nuestro equipo de profesionales se encarga de planchar y plegar tu
+                                ropa, dejándola con un aspecto impecable. Utilizamos técnicas adecuadas para cada tipo
+                                de tejido, asegurando resultados satisfactorios.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-4 feature-card h-100 d-flex">
+                        <!-- Agrega las clases "h-100" y "d-flex" a la tarjeta -->
+                        <div class="card-body">
+                            <h2 class="card-title">Atencion al cliente</h2>
+                            <p class="card-text">Nuestro equipo amable y capacitado está listo para brindarte el mejor
+                                servicio. Si tienes alguna pregunta o solicitud especial, estaremos encantados de
+                                ayudarte y satisfacer tus necesidades.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sección de testimonios -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Testimonios</h2>
+            <div class="row align-items-stretch">
+                <!-- Agrega la clase "align-items-stretch" al contenedor de las columnas -->
+                <div class="col-lg-4">
+                    <div class="card mb-4 testimonial-card h-100 d-flex">
+                        <!-- Agrega las clases "testimonial-card", "h-100" y "d-flex" a la tarjeta -->
+                        <div class="card-body">
+                            <p class="card-text">"Dry Clean Fresh es mi lugar de confianza para la limpieza en seco. Nunca me han decepcionado. Su atención al detalle es excepcional, y siempre tratan mi ropa con el mayor cuidado."</p>
+                            <h5 class="card-title">Rafael Maradiaga</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-4 testimonial-card h-100 d-flex">
+                        <!-- Agrega las clases "testimonial-card", "h-100" y "d-flex" a la tarjeta -->
+                        <div class="card-body">
+                            <p class="card-text">"Dry Clean Fresh es una joya oculta en el mundo de la limpieza en seco. Su atención al detalle es incomparable y siempre me sorprenden con los resultados. "</p>
+                            <h5 class="card-title">Carlos Zavala</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-4 testimonial-card h-100 d-flex">
+                        <!-- Agrega las clases "testimonial-card", "h-100" y "d-flex" a la tarjeta -->
+                        <div class="card-body">
+                            <p class="card-text">"Estoy realmente impresionada con Dry Clean Fresh. Han logrado devolverle la vida a mi ropa favorita una y otra vez."</p>
+                            <h5 class="card-title">Soany Martinez</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sección del mapa -->
+    <section class="map-section">
+        <div id="map" style="height: 300px;"></div>
+    </section>
+
+    <!-- Código JavaScript para el mapa -->
+    <script src="js/map.js">
+    </script>
+    <!-- Enlace a Bootstrap JS y dependencias -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Tu archivo JS personalizado -->
+
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>Derechos de autor &copy; 2023 | Dry Clean Fresh</p>
+            <a class="footer-link" href="" target="_blank">Whatsapp</a>
+            <a class="footer-link" href="" target="_blank">Facebook</a>
+            <a class="footer-link" href="" target="_blank">Instagram</a>
+        </div>
+    </footer>
+</body>
+
+</html>

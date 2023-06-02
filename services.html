@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>Servicios | Dry Clean Fresh</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Tu archivo CSS personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        button[type="submit"] {
+            margin: 10px auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Dry Clean Fresh</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Acerca de</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Contenido de la página -->
+    <section class="container py-5">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <h2 class="mb-4">Contáctanos</h2>
+                <form action="submit_form.php" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" class="form-control" id="apellido" name="apellido" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" class="form-control" id="telefono" name="telefono" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo</label>
+                        <input type="email" class="form-control" id="correo" name="correo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tipo-servicio">Tipo de Servicio</label>
+                        <select class="form-control" id="tipo-servicio" name="tipo-servicio" onchange="toggleFields()"
+                            required>
+                            <option value="">Seleccionar</option>
+                            <option value="Planchado">Planchado</option>
+                            <option value="Lavanderia">Lavandería</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="subtotal-group" style="display: none;">
+                        <label for="subtotal">Sub Total</label>
+                        <input type="number" class="form-control" id="subtotal" name="subtotal" step="0.01" readonly>
+                    </div>
+                    <div class="form-group" id="impuesto-group" style="display: none;">
+                        <label for="impuesto">Impuesto</label>
+                        <input type="number" class="form-control" id="impuesto" name="impuesto" step="0.01" readonly>
+                    </div>
+                    <div class="form-group" id="total-group" style="display: none;">
+                        <label for="total">Total</label>
+                        <input type="number" class="form-control" id="total" name="total" step="0.01" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcion">Descripción</label>
+                        <textarea class="form-control" id="descripcion" name="descripcion" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Enlace a Bootstrap JS y dependencias -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Tu archivo JS personalizado -->
+    <script>
+        function toggleFields() {
+            var servicio = document.getElementById("tipo-servicio").value;
+            var subtotalGroup = document.getElementById("subtotal-group");
+            var impuestoGroup = document.getElementById("impuesto-group");
+            var totalGroup = document.getElementById("total-group");
+
+            if (servicio === "Planchado" || servicio === "Lavanderia") {
+                subtotalGroup.style.display = "block";
+                impuestoGroup.style.display = "block";
+                totalGroup.style.display = "block";
+            } else {
+                subtotalGroup.style.display = "none";
+                impuestoGroup.style.display = "none";
+                totalGroup.style.display = "none";
+            }
+        }
+    </script>
+    <!-- Pie de página -->
+    <footer class="footer bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>Derechos de autor &copy; 2023 | Dry Clean Fresh</p>
+            <a class="footer-link" href="" target="_blank">Whatsapp</a>
+            <a class="footer-link" href="" target="_blank">Facebook</a>
+            <a class="footer-link" href="" target="_blank">Instagram</a>
+        </div>
+    </footer>
+</body>
+
+</html>

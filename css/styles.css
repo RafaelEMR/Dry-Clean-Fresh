@@ -1,0 +1,113 @@
+/* Estilos personalizados */
+#btn{
+    font-family: 'Bebas Neue', sans-serif;
+}
+a{
+    font-family: 'Bebas Neue', sans-serif;
+}
+p{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+/* Estilo para el encabezado h1 */
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Estilo para el botón de Leer más */
+  .btn-light {
+    background-color: #fff;
+    color: #000;
+    border-color: #fff;
+  }
+  .btn-light:hover {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilo para el encabezado de la sección de testimonios */
+  h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Estilo para la tarjeta de testimonios */
+  .card {
+    font-family: 'PT Sans Narrow', sans-serif;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    
+    font-family: 'PT Sans Narrow', sans-serif;
+    margin-bottom: 1rem;
+  }
+  
+  /* Estilo para el pie de página */
+  footer {
+    color: #fff;
+  }
+  
+  /* Estilo para el enlace del pie de página */
+  footer a {
+    color: #fff;
+  }
+
+.header-container {
+    position: relative;
+    height: 500px;
+    background-image: url("/init.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .header-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /*backdrop-filter: blur(5px); /* Agrega el efecto de desenfoque */
+  }
+  
+  .header-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    padding-top: 200px;
+  }
+/* Estilo para las tarjetas de características */
+.card {
+    transition: box-shadow 0.5s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  .fade-in {
+    opacity: 0; /* Configura la opacidad inicial en 0 para que el texto esté oculto */
+    animation: fadeIn 1.5s ease-in forwards; /* Aplica la animación fadeIn durante 1 segundo */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* Empieza con opacidad 0 */
+    }
+    to {
+      opacity: 1; /* Termina con opacidad 1 */
+    }
+  }
+  
+  
