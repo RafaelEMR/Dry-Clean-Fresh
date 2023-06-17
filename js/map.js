@@ -7,8 +7,8 @@ require([
   ], function(Map, MapView, Point, SimpleMarkerSymbol, Graphic) {
     // Crear un punto con las coordenadas especificadas
     var point = new Point({
-      latitude: 14.083700527739046,
-      longitude: -87.18496545392848
+      latitude: 14.087399708397804,
+      longitude: -87.20170163068413
     });
 
     // Crear un símbolo para el marcador
